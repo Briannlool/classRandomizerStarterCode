@@ -1,3 +1,4 @@
+/* global $ */ 
 $(document).ready(function(){
 
 var scriptEdders= ["Paulson", "Brian", "Kevin", "Ricky"]; 
@@ -12,10 +13,11 @@ $("#studentButton").click(function(){
    
 $("#studentclicker").click(function(){  
     var students= $("input").val(scriptEdders.push());  
-    if ( students === "")
-    $("#students").html("Error"); 
-
-    
+    if ( students === "input"){
+    $("#students").html(); 
+    else (students === "")
+    $("#students").html("Error In Value"); 
+    }    
     
 }); 
    

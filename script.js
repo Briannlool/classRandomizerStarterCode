@@ -8,9 +8,16 @@ $("#studentButton").click(function(){
     console.log(x)
     $("#studentDisplay").html(scriptEdders[x]); 
 }); 
-    var students = 
-    scriptEdders.push()
    
+   
+$("#studentclicker").click(function(){  
+    var students= $("input").val(scriptEdders.push());  
+    if ( students === "")
+    $("#students").html("Error"); 
+
+    
+    
+}); 
    
    
    
